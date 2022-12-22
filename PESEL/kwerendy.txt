@@ -1,0 +1,24 @@
+kwerenda 1:
+rozwiązanie I:
+INSERT INTO karty_wedkarskie (adres, data_zezwolenia, imie, nazwisko, punkty) 
+VALUES ("Gdynia, Batorego 14/5", "2018-02-23", "Grzegorz", "Niemczyk", 0); 
+
+rozwiązanie II:
+INSERT INTO karty_wedkarskie 
+VALUES (NULL, 'Grzegorz', 'Niemczyk', 'Gdynia, Batorego 14/5', '2018-02-23', 0);
+
+kwerenda 2:
+SELECT imie, nazwisko 
+FROM karty_wedkarskie 
+WHERE punkty > 20;
+
+kwerenda 3:
+SELECT akwen 
+FROM lowisko 
+JOIN zawody_wedkarskie 
+ON lowisko.id = zawody_wedkarskie.Lowisko_id 
+WHERE sedzia = "Krzysztof Dobrowolski";
+
+kwerenda 4:
+CREATE USER 'anna'@'localhost' 
+IDENTIFIED BY 'anna123';
