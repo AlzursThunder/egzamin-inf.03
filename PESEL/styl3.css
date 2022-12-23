@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+}
+
+header,
+footer {
+    background: SaddleBrown;
+    color: #fff;
+    height: 100px;
+}
+
+header:first-child,
+footer:first-child {
+    width: 55%;
+    font-size: 120%;
+}
+
+header:nth-child(2),
+footer:nth-child(2) {
+    width: 25%;
+}
+
+header:last-child,
+footer:last-child {
+    width: 20%;
+    text-align: right;
+}
+
+main {
+    background: Snow;
+    padding: 70px;
+}
+
+a {
+    border: 2px dotted SaddleBrown;
+    background: Snow;
+    color: SaddleBrown;
+    padding: 20px;
+    line-height: 100px;
+}
+
+ol {
+    list-style: lower-alpha;
+}
