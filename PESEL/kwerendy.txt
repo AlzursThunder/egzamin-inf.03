@@ -1,0 +1,17 @@
+zapytanie 1:
+SELECT haslo 
+FROM uzytkownicy 
+WHERE login = 'Justyna';
+
+zapytanie 2:
+SELECT COUNT(*) FROM dane;
+
+zapytanie 3:
+SELECT login, rok_urodz, przyjaciol, hobby, zdjecie 
+FROM uzytkownicy 
+JOIN dane 
+ON uzytkownicy.id = dane.id 
+WHERE login = 'Justyna';
+
+zapytanie 4:
+ALTER TABLE dane ADD COLUMN stanowisko text;
