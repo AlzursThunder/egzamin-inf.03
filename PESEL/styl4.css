@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Garamond;
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    margin: 0;
+}
+header {
+    background: SaddleBrown;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+}
+
+aside {
+    background: tan;
+    height: 500px;
+    width: 40%;
+    float: left;
+}
+
+article,
+main {
+    background: tan;
+    height: 250px;
+    width: 60%;
+    float: right;
+}
+
+footer {
+    background: saddlebrown;
+    color: #fff;
+}
+
+form {
+    background: saddlebrown;
+    color: #fff;
+    padding: 10px 30px;
+    width: 300px;
+}
+
+input {
+    margin: 5px;
+}
+
+p::before {
+    content: 'STATUS: ';
+}
