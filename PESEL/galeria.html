@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl7.css">
+</head>
+<body>
+    <header>
+        <h2>Galeria miejsc ciekawych</h2>
+    </header>
+    <main>
+        <img src="./lanzarotte.jpg" alt="galeria">
+    </main>
+    <section>
+        <article>
+            <h3>Przeglądaj zdjęcia</h3>
+            <img src="./lanzarotte.jpg" alt="lanzarotte">
+            <img src="./pekin.jpg" alt="pekin">
+            <img src="./serengeti.jpg" alt="serengeti">
+            <img src="./wenecja.jpg" alt="wenecja">
+            <img src="./tajlandia.jpg" alt="tajlandia">
+        </article>
+        <aside>
+            <h3>Obrazy w naszej galerii</h3>
+            <table>
+                <tr>
+                    <td>Europa</td>
+                    <td>Azja</td>
+                    <td>Afryka</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <p>Polub nas <img src="icon-off.png" alt=""></p>
+            <a href="https://pixabay.com" target="_blank">Odkryj więcej zdjęć</a>
+        </aside>
+    </section>
+    <footer>
+        Autor: 00000000000
+    </footer>
+    
+    <script>
+        const images = document.querySelectorAll('article img')
+        const bigImg = document.querySelector('main img')
+        const iconImg = document.querySelector('aside img')
+        
+        const imgOn = 'icon-on.png'
+        const imgOff = 'icon-off.png'
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                bigImg.src = img.src
+            })
+        })
+
+        iconImg.addEventListener('click', () => {
+            const currentImg = iconImg.attributes[0].value
+            iconImg.src = currentImg === imgOff ? imgOn : imgOff
+        })
+    </script>
+</body>
+</html>
